@@ -1,0 +1,107 @@
+<header class="header">
+	<nav class="header__nav">
+		<div class="header__nav-container container">
+			<div class="header__nav-items">
+				<div class="header__nav-link">
+					{% include '@assets/svg/Geolocation.svg' %}
+					<a href="#">Москва</a>
+				</div>
+				<div class="header__nav-link">
+					{% include '@assets/svg/Shipping.svg' %}
+					<a href="#">Доставка и оплата</a>
+				</div>
+				<div class="header__nav-link">
+					{% include '@assets/svg/Shopping.svg' %}
+					<a href="#">Адрес и часы работы</a>
+				</div>
+			</div>
+			<div class="header__nav-items">
+				<div class="header__nav-link">
+					{% include '@assets/svg/Communication.svg' %}
+					<a href="#">market@estatut.ru</a>
+				</div>
+				<div class="header__nav-link">
+					{% include '@assets/svg/Phone.svg' %}
+					<a href="#">8 (968) 660-65-50</a>
+					{% include '@assets/svg/Interface.svg' %}
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	{# HEADER__TOP #}
+
+	<div class="header__top container">
+		<span class="header__top-burger burger__mobile burger__mobile-top"></span>
+		<div class="header__top-block">
+			<div class="header__top-logo">
+			{% include '@assets/svg/Logo.svg' %}
+		</div>
+		<form class="header__top-form" action="#">
+			<input class="header__top-input" type="text" placeholder="Что будем искать?">
+			<div class="header__top-img">
+				{% include '@assets/svg/Search-input.svg' %}
+			</div>
+			<button class="header__top-button">Искать</button>
+			<div class="header__button-img">
+				{% include '@assets/svg/Search.svg' %}
+			</div>
+		</form>
+		</div>
+		<div class="header__top-items">
+			<div class="header__top-item">
+				{% include '@assets/svg/Favorites.svg' %}
+				<a class="header__top-link" href="#">Отложено</a>
+			</div>
+			<div class="header__top-item">
+				{% include '@assets/svg/Smile.svg' %}
+				<a class="header__top-link" href="#">Войти</a>
+			</div>
+			<div class="header__top-item header__top-basket">
+				{% include '@assets/svg/Basket.svg' %}
+				<a class="header__top-link" href="#">Корзина</a>
+			</div>
+		</div>
+	</div>
+
+	{# HEADER__BOTTOM #}
+
+	<div class="header__bottom container">
+		<ul class="header__bottom-list">
+			<li>
+				<span class="header__bottom-burger burger__mobile"></span>
+				<a href="#" class="header__bottom-catalog">Каталог</a>
+			</li>
+			<li>
+				<a href="#">Авторы</a>
+			</li>
+			<li>
+				<a href="#">Новинки</a>
+			</li>
+			<li>
+				{% include '@assets/svg/Discount.svg' %}
+				<a href="#">Скидки</a>
+			</li>
+			<li>
+				<a href="#">Партнёрам</a>
+			</li>
+			<li>
+				<a href="#">Мы</a>
+			</li>
+		</ul>
+	</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

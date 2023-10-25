@@ -1,0 +1,474 @@
+.books
+{
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	@include mq(1200px)
+    {
+       margin-bottom: 30px;
+    }
+}
+
+
+.books__title-block
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgba(28, 41, 77, 0.15);
+	padding: 15px 10px;
+	@include mq(1200px)
+    {
+       padding: 15px 25px;
+    }
+}
+
+.books__news-title
+{
+	margin: 0;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 25px;
+	color: #1C294D;
+}
+
+.books__arrow-block
+{
+	display: flex;
+}
+
+.books__arrow-left
+{
+	width: 30px;
+	height: 30px;
+	border-top: 1px solid rgba(28, 41, 77, 0.15);
+	border-left: 1px solid rgba(28, 41, 77, 0.15);
+	border-bottom: 1px solid rgba(28, 41, 77, 0.15);
+	border-radius: 5px 0px 0px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	svg
+	{
+		width: 3.33px;
+		height: 5.83px;
+	}
+}
+
+.books__arrow-right
+{
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgba(28, 41, 77, 0.15);
+	border-radius: 0px 5px 5px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	svg
+	{
+		width: 3.33px;
+		height: 5.83px;
+	}
+}
+
+
+//-----------------------BOOKS__WRAPPER---------------------------
+
+
+.books__news-wrapper
+{
+	display: flex;
+}
+
+.books__news-block
+{
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	img
+	{
+		display: block;
+		margin: 0 auto;
+		width: 126px;
+ 		height: 180px;
+	}
+	@include mq(1200px)
+    {
+    	padding: 20px 30px;
+    	img
+    	{
+    		width: 140px;
+    		height: 200px;
+    	}
+    }
+}
+
+.books__news-img-wrapper
+{
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.books__news-bestseller
+{
+	position: absolute;
+	top: -7px;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 5px;
+	padding: 4px 10px;
+	color: #AC8EE3;
+	background-color: #EEE9F7;
+}
+
+.books__news-bestseller3
+{
+	color: #3DC47E;
+	background-color: #E2F6EC;
+}
+
+.books__news-sale
+{
+	position: absolute;
+	top: 30px;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 5px;
+	padding: 3px 10px;
+	color: #FF4F52;
+	background-color: #FFEEEE;
+}
+
+.books__news-rating-block
+{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 10px;
+	@include mq(1024px)
+    {
+    	display: flex;
+    	flex-direction: row;
+    	gap: 10px;
+    	margin-bottom: 12px;
+    }
+}
+
+.book__price-text-block
+{
+	display: flex;
+	align-items: baseline;
+	gap: 7px;
+	position: relative;
+	svg
+	{
+		position: absolute;
+	   left: 55px;
+    	top: 10px;
+	}
+}
+
+.book__price-text-red {
+	color: red;
+}
+
+.book__price-text-deleted
+{
+	font-size: 12px;
+	font-weight: 400;
+	color: #1C294D;
+	opacity: 50%;
+}
+
+.book__price-text-discount
+{
+	font-size: 12px;
+	font-weight: 400;
+	color: #0DB98C;
+}
+
+.books__news-rating
+{
+	width: 52px;
+	height: 25px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+	border-radius: 5px;
+    color: #FBC02D;
+    background-color: rgba(251, 192, 45, 0.15);
+}
+
+
+.books__news-rating-text
+{
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.books__news-score
+{
+	width: 144px;
+	height: 25px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+	border-radius: 5px;
+    color: #7986CB;
+    background-color: rgba(121, 134, 203, 0.15);
+}
+
+.books__news-rating-text
+{
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.books__news-buttons
+{
+	display: flex;
+	gap: 5px;
+	@include mq(1200px)
+    {
+    	gap: 10px;
+    }
+}
+
+.books__news-basket-block
+{
+	position: relative;
+	svg
+	{
+		position: absolute;
+		left: 15px;
+		top: 9px;
+		@include mq(1200px)
+   		{
+    		left: 27px;
+			top: 11px;
+   		}
+	}
+}
+
+.books__news-basket-button
+{
+	width: 117px;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid #EEE;
+	padding-left: 23px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #1C294D;
+	@include mq(1200px)
+    {
+    	width: 146px;
+    	height: 40px;
+    	padding-left: 35px;
+    }
+}
+
+.books__news-favorites-block
+{
+	position: relative;
+	svg
+	{
+		position: absolute;
+		left: 12.5px;
+		top: 8px;
+		@include mq(1200px)
+    	{
+    		left: 15px;
+    		top: 10px;
+    	}
+	}
+}
+
+.books__news-favorites-button
+{
+	width: 35px;
+	height: 35px;
+	border: 1px solid #EEE;
+	@include mq(1200px)
+    {
+    	width: 40px;
+    	height: 40px;
+    }
+}
+
+.books__news-order-two
+{
+	border-left: 1px solid rgba(28, 41, 77, 0.15);
+	@include mq(768px)
+    {
+    	order: 4;
+    }
+}
+
+.books__news-order-three
+{
+	display: none;
+	border-left: 1px solid rgba(28, 41, 77, 0.15);
+	@include mq(768px)
+    {
+    	display: block;
+    	order: 2;
+    }
+}
+
+.books__news-order-four
+{
+	display: none;
+	border-left: 1px solid rgba(28, 41, 77, 0.15);
+	@include mq(1024px)
+    {
+    	display: block;
+    	order: 3;
+    }
+}
+
+.books__news-show-block
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(28, 41, 77, 0.15);
+	button
+	{
+		border: none;
+		padding: 10px 0;
+	}
+}
+
+.books__news-button-mobile
+{
+    	font-size: 14px;
+    	font-weight: 500;
+    	line-height: 20px;
+	@include mq(1024px)
+    {
+    	display: none;
+    }
+}
+
+.books__news-button-desktop
+{
+	display: none;
+	@include mq(1024px)
+    {
+    	display: block;
+    	font-size: 14px;
+    	font-weight: 500;
+    	line-height: 20px;
+    	color: #1C294D;
+    }
+}
+
+// --------------------BOOKS EMAIL--------------------------
+
+
+.books__email-block
+{
+	background-color: #F7F7F7;
+	padding: 10px 0;
+	@include mq(1200px)
+    {
+    	padding: 30px 0;
+    }
+}
+
+.books__email
+{
+	height: 190px;
+	width: 100%;
+	background-color: #0288D1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	border-radius: 5px;
+	@include mq(1200px)
+    {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: center;
+    	align-items: center;
+    	height: 105px;
+    }
+}
+
+.books__email-text-wrapper
+{
+	position: relative;
+	margin-right: 100px;
+	z-index: 1;
+	@include mq(1200px)
+	{
+		margin-right: 0;
+	}
+}
+
+.books__email-text
+{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25px;
+	color: #FFFFFF;
+	br
+	{
+		@include mq(1200px)
+		{
+    		display: none;
+		}
+	}
+	span
+	{
+		position: relative;
+	}
+	svg
+	{
+		z-index: -1;
+		left: -11px;
+		top: -4px;
+		position: absolute;
+	}
+}
+
+.books__email-input
+{
+	width: 335px;
+	height: 40px;
+	font-weight: 400;
+	font-size: 14px;
+	background-color: #FFF;
+	border: none;
+	border-radius: 5px;
+	padding-left: 15px;
+	@include mq(1200px)
+	{
+ 		width: 418px;
+	}
+}
+
+.books__email-button
+{
+	width: 335px;
+	height: 40px;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	color: #FFF;
+	@include mq(1200px)
+    {
+    	width: 137px;
+    }
+}
+
+
+
+

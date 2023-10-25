@@ -1,0 +1,16 @@
+{% extends "@layouts/layout.twig" %}
+
+{% block page %}
+	<div class="container">
+		{% include '@blocks/slider/slider.twig' %}
+		{% include '@blocks/books/books.twig' %}
+		{% include '@blocks/columns/columns.twig' %}
+		{% include '@blocks/news/news.twig' %}
+	</div>
+	{#
+		Пример подключения файла
+		{% include '@blocks/component/component.twig' %}
+		Пример подключения svg
+		{% include '@assets/svg/component.svg' %}
+	#}
+{% endblock %}

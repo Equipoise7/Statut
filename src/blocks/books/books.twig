@@ -1,0 +1,311 @@
+<div class="books">
+	<div class="books__news">
+		<div class="books__title-block">
+			<p class="books__news-title">Новые поступления</p>
+			<div class="books__arrow-block">
+				<div class="books__arrow-left">
+					{% include "@assets/svg/arrow-left.svg" %}
+				</div>
+				<div class="books__arrow-right">
+					{% include "@assets/svg/arrow-right.svg" %}
+				</div>
+			</div>
+		</div>
+		<div class="books__news-wrapper">
+			<div class="books__news-block books__news-order-one">
+				<div class="books__news-img-wrapper">
+					<span class="books__news-bestseller">Бестселлер</span>
+					<span class="books__news-sale">1+1=3</span>
+					<img src="./svg/book-1.svg" alt="Logo">
+				</div>
+				<p class="book__sub-title-text">Корпоративное право</p>
+				<p class="book__text">Инвестирование: способы, риски, субъекты : монограф...</p>
+				<p class="book__autor-text">Майфат А.В.</p>
+				<p class="book__price-text">4 450 ₽</p>
+				<div class="books__news-rating-block">
+					<div class="books__news-rating">
+						{% include "@assets/svg/star-gold.svg" %}
+						<span class="books__news-rating-text">4.9</span>
+					</div>
+					<div class="books__news-score">
+						{% include "@assets/svg/like.svg" %}
+						<span class="books__news-rating-text">89% рекомендуют</span>
+					</div>
+				</div>
+				<div class="books__news-buttons">
+					<div class="books__news-basket-block">
+						<button class="books__news-basket-button">В корзину</button>
+						{% include "@assets/svg/Basket-button.svg" %}
+					</div>
+					<div class="books__news-favorites-block">
+						<button class="books__news-favorites-button"></button>
+						{% include "@assets/svg/Favorites-button.svg" %}
+					</div>
+				</div>
+			</div>
+			<div class="books__news-block books__news-order-two">
+				<div class="books__news-img-wrapper">
+					<span class="books__news-bestseller">Бестселлер</span>
+					<span class="books__news-sale">1+1=3</span>
+					<img src="./svg/book-1.svg" alt="Logo">
+				</div>
+				<p class="book__sub-title-text">Корпоративное право</p>
+				<p class="book__text">Инвестирование: способы, риски, субъекты : монограф...</p>
+				<p class="book__autor-text">Майфат А.В.</p>
+				<p class="book__price-text book__price-text-old">4 450 ₽</p>
+				<p class="book__price-text-new">450 ₽</p>
+				<div class="books__news-rating-block">
+					<div class="books__news-rating">
+						{% include "@assets/svg/star-gold.svg" %}
+						<span class="books__news-rating-text">4.9</span>
+					</div>
+					<div class="books__news-score">
+						{% include "@assets/svg/like.svg" %}
+						<span class="books__news-rating-text">89% рекомендуют</span>
+					</div>
+				</div>
+				<div class="books__news-buttons">
+					<div class="books__news-basket-block">
+						<button class="books__news-basket-button">В корзину</button>
+						{% include "@assets/svg/Basket-button.svg" %}
+					</div>
+					<div class="books__news-favorites-block">
+						<button class="books__news-favorites-button"></button>
+						{% include "@assets/svg/Favorites-button.svg" %}
+					</div>
+				</div>
+			</div>
+			<div class="books__news-block books__news-order-three">
+				<div class="books__news-img-wrapper">
+					<span class="books__news-bestseller books__news-bestseller3">Новинка</span>
+					<img src="./svg/book-2.svg" alt="Logo">
+				</div>
+				<p class="book__sub-title-text">Договорное право</p>
+				<p class="book__text">Договор коммерческой концессии (франчайзинг). Граж...</p>
+				<p class="book__autor-text">Багдасарян А.Ф.</p>
+				<p class="book__price-text">372 ₽</p>
+				<div class="books__news-rating-block">
+					<div class="books__news-rating">
+						{% include "@assets/svg/star-gold.svg" %}
+						<span class="books__news-rating-text">4.9</span>
+					</div>
+					<div class="books__news-score">
+						{% include "@assets/svg/like.svg" %}
+						<span class="books__news-rating-text">89% рекомендуют</span>
+					</div>
+				</div>
+				<div class="books__news-buttons">
+					<div class="books__news-basket-block">
+						<button class="books__news-basket-button">В корзину</button>
+						{% include "@assets/svg/Basket-button.svg" %}
+					</div>
+					<div class="books__news-favorites-block">
+						<button class="books__news-favorites-button"></button>
+						{% include "@assets/svg/Favorites-button.svg" %}
+					</div>
+				</div>
+			</div>
+			<div class="books__news-block books__news-order-four">
+				<div class="books__news-img-wrapper">
+					<img src="./svg/book-3.svg" alt="Logo">
+				</div>
+				<p class="book__sub-title-text">Конкурентное право</p>
+				<p class="book__text">Договор коммерческой концессии (франчайзинг). Граж...</p>
+				<p class="book__autor-text">Башлаков-Николаев И.В.</p>
+				<div class="book__price-text-block">
+					<p class="book__price-text book__price-text-red">984 ₽</p>
+					{% include "@assets/svg/book-delete.svg" %}
+					<p class="book__price-text-deleted">1284 ₽</p>
+					<p class="book__price-text-discount">Выгода 300 ₽</p>
+				</div>
+				<div class="books__news-rating-block">
+					<div class="books__news-rating">
+						{% include "@assets/svg/star-gold.svg" %}
+						<span class="books__news-rating-text">4.9</span>
+					</div>
+					<div class="books__news-score">
+						{% include "@assets/svg/like.svg" %}
+						<span class="books__news-rating-text">89% рекомендуют</span>
+					</div>
+				</div>
+				<div class="books__news-buttons">
+					<div class="books__news-basket-block">
+						<button class="books__news-basket-button">В корзину</button>
+						{% include "@assets/svg/Basket-button.svg" %}
+					</div>
+					<div class="books__news-favorites-block">
+						<button class="books__news-favorites-button"></button>
+						{% include "@assets/svg/Favorites-button.svg" %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="books__news-show-block">
+			<button class="books__news-button-mobile">Показать все книги</button>
+			<button class="books__news-button-desktop">Показать все книги раздела</button>
+		</div>
+	</div>
+	<div class="books__email-block">
+		<div class="books__email">
+			<div class="books__email-text-wrapper">
+				<p class="books__email-text">
+					Скидка <span>{% include "@assets/svg/Vector-163.svg" %} 200 ₽</span> при подписке<br> на рассылку Издательства
+				</p>
+			</div>
+			<form class="books__email-form" action="">
+				<input class="books__email-input" type="text" placeholder="Введите ваш Email">
+			</form>
+			<button class="books__email-button">Подписаться</button>
+		</div>
+	</div>
+	<div class="books__news">
+		<div class="books__title-block">
+			<p class="books__news-title">Готовятся к выходу</p>
+			<div class="books__arrow-block">
+				<div class="books__arrow-left">
+					{% include "@assets/svg/arrow-left.svg" %}
+				</div>
+				<div class="books__arrow-right">
+					{% include "@assets/svg/arrow-right.svg" %}
+				</div>
+			</div>
+		</div>
+		<div class="books__news-wrapper books__news-order-one">
+			<div class="books__news-block">
+				<div class="books__news-img-wrapper">
+					<span class="books__news-bestseller">Бестселлер</span>
+					<span class="books__news-sale">1+1=3</span>
+					<img src="./svg/book-1.svg" alt="Logo">
+				</div>
+				<p class="book__sub-title-text">Корпоративное право</p>
+				<p class="book__text">Инвестирование: способы, риски, субъекты : монограф...</p>
+				<p class="book__autor-text">Майфат А.В.</p>
+				<p class="book__price-text">4 450 ₽</p>
+				<div class="books__news-rating-block">
+					<div class="books__news-rating">
+						{% include "@assets/svg/star-gold.svg" %}
+						<span class="books__news-rating-text">4.9</span>
+					</div>
+					<div class="books__news-score">
+						{% include "@assets/svg/like.svg" %}
+						<span class="books__news-rating-text">89% рекомендуют</span>
+					</div>
+				</div>
+				<div class="books__news-buttons">
+					<div class="books__news-basket-block">
+						<button class="books__news-basket-button">В корзину</button>
+						{% include "@assets/svg/Basket-button.svg" %}
+					</div>
+					<div class="books__news-favorites-block">
+						<button class="books__news-favorites-button"></button>
+						{% include "@assets/svg/Favorites-button.svg" %}
+					</div>
+				</div>
+			</div>
+			<div class="books__news-block books__news-order-two">
+				<div class="books__news-img-wrapper">
+					<span class="books__news-bestseller">Бестселлер</span>
+					<span class="books__news-sale">1+1=3</span>
+					<img src="./svg/book-1.svg" alt="Logo">
+				</div>
+				<p class="book__sub-title-text">Корпоративное право</p>
+				<p class="book__text">Инвестирование: способы, риски, субъекты : монограф...</p>
+				<p class="book__autor-text">Майфат А.В.</p>
+				<p class="book__price-text book__price-text-old">4 450 ₽</p>
+				<p class="book__price-text-new">450 ₽</p>
+				<div class="books__news-rating-block">
+					<div class="books__news-rating">
+						{% include "@assets/svg/star-gold.svg" %}
+						<span class="books__news-rating-text">4.9</span>
+					</div>
+					<div class="books__news-score">
+						{% include "@assets/svg/like.svg" %}
+						<span class="books__news-rating-text">89% рекомендуют</span>
+					</div>
+				</div>
+				<div class="books__news-buttons">
+					<div class="books__news-basket-block">
+						<button class="books__news-basket-button">В корзину</button>
+						{% include "@assets/svg/Basket-button.svg" %}
+					</div>
+					<div class="books__news-favorites-block">
+						<button class="books__news-favorites-button"></button>
+						{% include "@assets/svg/Favorites-button.svg" %}
+					</div>
+				</div>
+			</div>
+			<div class="books__news-block books__news-order-three">
+				<div class="books__news-img-wrapper">
+					<span class="books__news-bestseller books__news-bestseller3">Новинка</span>
+					<img src="./svg/book-2.svg" alt="Logo">
+				</div>
+				<p class="book__sub-title-text">Договорное право</p>
+				<p class="book__text">Договор коммерческой концессии (франчайзинг). Граж...</p>
+				<p class="book__autor-text">Багдасарян А.Ф.</p>
+				<p class="book__price-text">372 ₽</p>
+				<div class="books__news-rating-block">
+					<div class="books__news-rating">
+						{% include "@assets/svg/star-gold.svg" %}
+						<span class="books__news-rating-text">4.9</span>
+					</div>
+					<div class="books__news-score">
+						{% include "@assets/svg/like.svg" %}
+						<span class="books__news-rating-text">89% рекомендуют</span>
+					</div>
+				</div>
+				<div class="books__news-buttons">
+					<div class="books__news-basket-block">
+						<button class="books__news-basket-button">В корзину</button>
+						{% include "@assets/svg/Basket-button.svg" %}
+					</div>
+					<div class="books__news-favorites-block">
+						<button class="books__news-favorites-button"></button>
+						{% include "@assets/svg/Favorites-button.svg" %}
+					</div>
+				</div>
+			</div>
+			<div class="books__news-block books__news-order-four">
+				<div class="books__news-img-wrapper">
+					<img src="./svg/book-3.svg" alt="Logo">
+				</div>
+				<p class="book__sub-title-text">Конкурентное право</p>
+				<p class="book__text">Договор коммерческой концессии (франчайзинг). Граж...</p>
+				<p class="book__autor-text">Башлаков-Николаев И.В.</p>
+				<div class="book__price-text-block">
+					<p class="book__price-text book__price-text-red">984 ₽</p>
+					{% include "@assets/svg/book-delete.svg" %}
+					<p class="book__price-text-deleted">1284 ₽</p>
+					<p class="book__price-text-discount">Выгода 300 ₽</p>
+				</div>
+				<div class="books__news-rating-block">
+					<div class="books__news-rating">
+						{% include "@assets/svg/star-gold.svg" %}
+						<span class="books__news-rating-text">4.9</span>
+					</div>
+					<div class="books__news-score">
+						{% include "@assets/svg/like.svg" %}
+						<span class="books__news-rating-text">89% рекомендуют</span>
+					</div>
+				</div>
+				<div class="books__news-buttons">
+					<div class="books__news-basket-block">
+						<button class="books__news-basket-button">В корзину</button>
+						{% include "@assets/svg/Basket-button.svg" %}
+					</div>
+					<div class="books__news-favorites-block">
+						<button class="books__news-favorites-button"></button>
+						{% include "@assets/svg/Favorites-button.svg" %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="books__news-show-block">
+			<button class="books__news-button-mobile">Показать все книги</button>
+			<button class="books__news-button-desktop">Показать все книги раздела</button>
+		</div>
+	</div>
+</div>
+
+
+
+

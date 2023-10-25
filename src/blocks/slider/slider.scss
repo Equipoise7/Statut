@@ -1,0 +1,330 @@
+.book__orange-block
+{
+	background-color: #FF7A00;
+	opacity: 15%;
+}
+
+.book__orange-text
+{
+	font-weight: 500;
+	font-size: 12px;
+	color: #FF7A00;
+	padding: 5px 10px;
+	background-color: rgba(255, 122, 0, 0.15);
+	border-radius: 5px;
+}
+
+
+.book__title-text
+{
+	font-weight: 500;
+	font-size: 16px;
+	color: #1C294D;
+}
+
+.book__sub-title-text
+{
+	font-weight: 400;
+	color: #1C294D;
+	opacity: 50%;
+	font-size: 12px;
+	line-height: 15px;
+	margin-bottom: 8px;
+}
+
+.book__text
+{
+	font-weight: 500;
+	font-size: 14px;
+	color: #1C294D;
+	line-height: 19px;
+	margin-bottom: 8px;
+}
+
+.book__autor-text
+{
+	font-weight: 400;
+	font-size: 12px;
+	color: #1C294D;
+	line-height: 15px;
+	margin-bottom: 8px;
+}
+
+.book__price-text
+{
+	font-weight: 700;
+	font-size: 18px;
+	color: #1C294D;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.book__price-text-new
+{
+	display: none;
+	@include mq(1200px)
+    {
+    	display: block;
+    	font-weight: 700;
+		font-size: 18px;
+		color: #1C294D;
+		line-height: 20px;
+		margin-bottom: 10px;
+    }
+}
+
+.book__price-text-old
+{
+	@include mq(1200px)
+    {
+    	display: none;
+    }
+}
+
+.site-content
+{
+	background-color: #F7F7F7;
+}
+
+.slider
+{
+	padding-top: 10px;
+	display: flex;
+    flex-direction: column;
+    gap: 10px;
+	@include mq(1200px)
+    {
+        display: flex;
+        flex-direction: row;
+		flex-wrap: wrap;
+		padding: 30px 0;
+    }
+}
+
+.slider__block
+{
+	margin: 0 auto;
+	display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    @include mq(1200px)
+    {
+        width: 750px;
+    }
+}
+
+.slider__img
+{
+	margin: 0 auto;
+	position: relative;
+	width: 100%
+}
+
+.slider__img svg
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	// position: relative;
+}
+
+.slider__shape-wrapper
+{
+	display: flex;
+	justify-content: center;
+}
+
+.slider__shape-block
+{
+	position: absolute;
+	display: flex;
+	gap: 5px;
+    bottom: 6%;
+	span
+	{
+		background-color: black;
+		width: 25px;
+		height: 2px;
+		background-color: #FFFFFF;
+	}
+}
+
+.slider__arrow-left
+{
+	display: none;
+	@include mq(768px)
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background-color: #FFF;
+		border-radius: 5px;
+		position: absolute;
+		left: 25px;
+		top: 45%;
+		svg
+		{
+			width: 6.67px;
+			height: 11.67px;
+		}
+	}
+}
+
+.slider__arrow-right
+{
+	display: none;
+	@include mq(768px)
+    {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background-color: #FFF;
+		border-radius: 5px;
+		position: absolute;
+		right: 25px;
+		top: 45%;
+		svg
+		{
+			width: 6.67px;
+			height: 11.67px;
+		}
+    }
+}
+
+.slider__book
+{
+    background-color: #FFF;
+    padding: 20px 20px;
+    border-radius: 5px;
+    @include mq(1200px)
+    {
+        background-color: #FFF;
+   		padding: 20px 20px;
+  	    max-width: 360px;
+   	    border-radius: 5px;
+    	margin: 0 auto;
+    }
+}
+
+.slider__book-title
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.slider__book-oleg
+{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 45%;
+	@include mq(1200px)
+    {
+        width: 167px;
+    }
+}
+
+.slider__marketing-mobile
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+	@include mq(800px)
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+	@include mq(1200px)
+    {
+        display: none;
+    }
+}
+
+.slider__marketing-desktop
+{
+	display: none;
+	@include mq(1200px)
+    {
+        display: block;
+        display: flex;
+   		justify-content: space-between;
+   		svg
+   		{
+   			width: 360px;
+   		}
+    }
+}
+
+.slider__book-buttons
+{
+	display: flex;
+	gap: 10px;
+}
+
+.basket__button-block
+{
+	position: relative;
+	svg
+	{
+		position: absolute;
+		left: 85px;
+		top: 11px;
+		@include mq(1200px)
+   		{
+    	left: 27px;
+		top: 11px;
+   		}
+	}
+}
+
+.favorites__button-block
+{
+	position: relative;
+	svg
+	{
+		position: absolute;
+		left: 15px;
+		top: 10px;
+	}
+}
+
+.basket__button
+{
+	width: 265px;
+	height: 40px;
+	border: 1px solid #EEE;
+	padding-left: 35px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #1C294D;
+	@include mq(1200px)
+    {
+    	width: 146px;
+    }
+}
+
+.favorites__button
+{
+	width: 40px;
+	height: 40px;
+	border: 1px solid #EEE;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<div class="slider">
+	<div class="slider__block">
+		<div class="slider__img">
+			{% include "@assets/svg/Group-slider.svg" %}
+			<div class="slider__arrow-left">
+				{% include "@assets/svg/arrow-left.svg" %}
+			</div>
+			<div class="slider__arrow-right">
+				{% include "@assets/svg/arrow-right.svg" %}
+			</div>
+			<div class="slider__shape-wrapper">
+				<div class="slider__shape-block">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="slider__marketing-desktop">
+			{% include "@assets/svg/Group-img.svg" %}
+			{% include "@assets/svg/Group-img2.svg" %}
+		</div>
+	</div>
+	<div class="slider__book">
+		<div class="slider__book-title">
+			<p class="book__title-text">Книга дня</p>
+			<p class="book__orange-text">08:56:31</p>
+		</div>
+		<img class="slider__book-oleg" src="./img/Book-oleg.png" alt="Logo">
+		<div class="slider__book-subtitle">
+			<p class="book__sub-title-text">Корпоративное право</p>
+			<p class="book__text">Инвестирование: способы, риски, субъекты : монография</p>
+			<p class="book__autor-text">Майфат А.В.</p>
+			<p class="book__price-text">4 450 ₽</p>
+		</div>
+		<div class="slider__book-buttons book__buttons">
+			<div class="basket__button-block">
+				<button class="basket__button">В корзину</button>
+				{% include "@assets/svg/Basket-button.svg" %}
+			</div>
+			<div class="favorites__button-block">
+				<button class="favorites__button"></button>
+				{% include "@assets/svg/Favorites-button.svg" %}
+			</div>
+		</div>
+	</div>
+	<div class="slider__marketing-mobile">
+		{% include "@assets/svg/Group-img.svg" %}
+		{% include "@assets/svg/Group-img2.svg" %}
+	</div>
+</div>
